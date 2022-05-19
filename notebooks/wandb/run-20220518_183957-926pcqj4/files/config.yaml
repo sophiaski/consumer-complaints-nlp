@@ -1,0 +1,192 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.11
+    framework: huggingface
+    huggingface_version: 4.16.2
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.9.7
+    start_time: 1652924397
+    t:
+      1:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 11
+      - 41
+      - 49
+      2:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 11
+      - 41
+      - 49
+      3:
+      - 2
+      - 16
+      4: 3.9.7
+      5: 0.12.11
+      6: 4.16.2
+      8:
+      - 1
+      - 5
+    visualize:
+      val_conf_mat:
+        panel_config:
+          fieldSettings:
+            Actual: Actual
+            Predicted: Predicted
+            nPredictions: nPredictions
+          panelDefId: wandb/confusion_matrix/v1
+          stringSettings:
+            title: ''
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: val_conf_mat_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+      val_pr_curve:
+        panel_config:
+          fieldSettings:
+            class: class
+            x: recall
+            y: precision
+          panelDefId: wandb/area-under-curve/v0
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: val_pr_curve_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+      val_roc_curve:
+        panel_config:
+          fieldSettings:
+            class: class
+            x: fpr
+            y: tpr
+          panelDefId: wandb/area-under-curve/v0
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: val_roc_curve_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+batch_size:
+  desc: null
+  value: 32
+classifier_dropout:
+  desc: null
+  value: 0.3
+clip_grad:
+  desc: null
+  value: false
+epochs:
+  desc: null
+  value: 1
+frac:
+  desc: null
+  value: 0.05
+learning_rate:
+  desc: null
+  value: 5.0e-05
+max_length:
+  desc: null
+  value: 128
+method:
+  desc: null
+  value: grid
+metric:
+  desc: null
+  value:
+    goal: maximize
+    name: val_acc
+optimizer:
+  desc: null
+  value: adam
+parameters:
+  desc: null
+  value:
+    batch_size:
+      value: 32
+    classifier_dropout:
+      value: 0.3
+    clip_grad:
+      value: false
+    epochs:
+      value: 1
+    frac:
+      value: 0.05
+    learning_rate:
+      value: 5.0e-05
+    max_length:
+      value: 128
+    optimizer:
+      value: adam
+    perc_warmup_steps:
+      value: 0.1
+    split_size:
+      value: 0.2
+perc_warmup_steps:
+  desc: null
+  value: 0.1
+split_size:
+  desc: null
+  value: 0.2

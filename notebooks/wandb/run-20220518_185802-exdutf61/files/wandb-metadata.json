@@ -1,0 +1,21 @@
+{
+    "os": "Linux-5.13.0-41-generic-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-05-19T01:58:04.739728",
+    "startedAt": "2022-05-19T01:58:02.060448",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/ski/.local/share/jupyter/runtime/kernel-65bce165-0d8d-4543-a4a1-d00da3baba82.json"
+    ],
+    "state": "running",
+    "program": "notebooks/HyperparameterSweep.ipynb",
+    "root": "/home/ski/Desktop/code/breck",
+    "host": "ski",
+    "username": "ski",
+    "executable": "/home/ski/anaconda3/bin/python"
+}

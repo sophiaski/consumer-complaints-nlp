@@ -1,0 +1,19 @@
+{
+    "os": "Linux-5.13.0-41-generic-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-05-19T01:11:09.583058",
+    "startedAt": "2022-05-19T01:11:07.358548",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/ski/.local/share/jupyter/runtime/kernel-5e974417-a235-4227-818b-f3951926f28d.json"
+    ],
+    "state": "running",
+    "program": "notebooks/HyperparameterSweep.ipynb",
+    "root": "/home/ski/Desktop/code/breck",
+    "host": "ski",
+    "username": "ski",
+    "executable": "/home/ski/anaconda3/bin/python"
+}

@@ -1,0 +1,22 @@
+wandb_version: 1
+
+batch_size:
+  value: 32
+classifier_dropout:
+  value: 0.3
+clip_grad:
+  value: false
+epochs:
+  value: 1
+frac:
+  value: 0.01
+learning_rate:
+  value: 5.0e-05
+max_length:
+  value: 128
+optimizer:
+  value: adam
+perc_warmup_steps:
+  value: 0.1
+split_size:
+  value: 0.2
